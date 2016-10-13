@@ -22,3 +22,10 @@ $ docker build -t rq-worker .
 $ docker run --link server:db --name worker -d rq-worker
 ```
 
+run dashboard container
+
+``` bash
+$ cd docker-rq/dashboard
+$ docker build -t rq-dashboard .
+$ docker run --link server:db --name dashboard -d rq-dashboard
+```
