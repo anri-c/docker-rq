@@ -27,5 +27,5 @@ run dashboard container
 ``` bash
 $ cd docker-rq/dashboard
 $ docker build -t rq-dashboard .
-$ docker run --link server:db --name dashboard -d rq-dashboard
+$ docker run --link server:db -9 9181:9181 --name dashboard -d rq-dashboard
 ```
